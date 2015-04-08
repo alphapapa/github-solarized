@@ -46,7 +46,8 @@
     background-color: #eee8d5 !important;
     color: #586e75 !important;
   }
-  .markdown-body code {
+  .markdown-body code,
+  .markdown-body pre {
     background-color: #eee8d5 !important;
   }
   .new-user-avatar-cta {
