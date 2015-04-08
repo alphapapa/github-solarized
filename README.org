@@ -1,12 +1,14 @@
 * github-solarized
 This is a set of user-stylesheets based upon the [[http://ethanschoonover.com/solarized][Solarized]] theme ([[https://github.com/altercation/solarized][repo]]).  It uses [[http://learnboost.github.com/stylus/][Stylus]] to generate the CSS.  The home of this stylesheet is at [[https://github.com/alphapapa/github-solarized]].
 ** Installation
-Install the =github-solarized-dark.css= file according to your browser's method (e.g. using the Stylish extension in Firefox).
+Install the =github-solarized-dark.css= file (or you can use the light one, if you want...) according to your browser's method (e.g. using the Stylish extension in Firefox).
 ** Development
 To make changes, just edit the =.styl= files and run =make=.  (You need to have Stylus installed, of course.)
 
 Basically, nearly the only things that should be in =dark.styl= or =light.styl= should be changes to the =@color-= variables that adjust it for light or dark.  Everything else should go in =solarized.less=.  Colors are defined as =@color-= variables, and mixins are used to insert common CSS properties (like =color=, =background=, etc) with =!important=.  Most changes can be made without inserting CSS properties directly into the selectors.
 
 I highly recommend using Emacs with =stylus-mode= and =outshine-mode=, but, of course, you can use whatever you like.  :)
+
+It's a good idea to avoid the use of =*= selectors wherever possible.  They tend to have unanticipated side-effects which can take time to track down.
 ** License
 Really?  Come on, it's just some CSS.  Just have fun and share!
