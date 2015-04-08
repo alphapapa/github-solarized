@@ -1,5 +1,5 @@
 * github-solarized
-This is a set of user-stylesheets based upon the [[https://github.com/altercation/solarized][Solarized]] theme.  It uses [[http://lesscss.org/][Less]] to generate the CSS.
+This is a set of user-stylesheets based upon the [[http://ethanschoonover.com/solarized][Solarized]] theme ([[https://github.com/altercation/solarized][repo]]).  It uses [[http://lesscss.org/][Less]] to generate the CSS.  The home of this stylesheet is at [[https://github.com/alphapapa/github-solarized]].
 ** Installation
 Install the =github-solarized-dark.css= file according to your browser's method (e.g. using the Stylish extension in Firefox).
 ** Development
