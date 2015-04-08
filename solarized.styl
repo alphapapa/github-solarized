@@ -50,9 +50,11 @@ textarea, .comment-form-textarea *
     background-image linear-gradient(color-background-highlight-extra, color-background-highlight) i
     color emphasized
 
-.btn-primary
+// For some reason, the .issues-listing down below is overriding the
+// .btn-primary here unless I use .issues-listing here also
+.btn-primary, .issues-listing .btn-primary
     background-color green
-    background-image linear-gradient(green, darken(green, 10%)) i
+    background-image linear-gradient(green, darken(green, 50%)) i
     color emphasized
 
 .contrib-number
