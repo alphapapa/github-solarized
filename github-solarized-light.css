@@ -72,6 +72,9 @@
   .issues-listing * a {
     color: #657b83 !important;
   }
+  .markdown-body a {
+    color: #268bd2 !important;
+  }
   .markdown-body code,
   .markdown-body pre {
     background-color: #eee8d5 !important;
