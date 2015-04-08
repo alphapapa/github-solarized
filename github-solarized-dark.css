@@ -80,8 +80,19 @@
     background-color: #073642 !important;
   }
   .commit-tease *,
-  .commit-title * {
+  .commit-title *,
+  .commit-tease .sha-block,
+  .commit-title .sha-block {
     background-color: #073642 !important;
+    color: #586e75 !important;
+  }
+  .commit-tease a,
+  .commit-title a {
+    color: #839496 !important;
+  }
+  .commit-tease .sha,
+  .commit-title .sha {
+    color: #839496 !important;
   }
   .conversation-list-heading .inner {
     background-color: #002b36 !important;
@@ -95,6 +106,7 @@
   .lang {
     color: #93a1a1 !important;
   }
+  .octicon,
   .octicon-repo {
     color: #839496 !important;
   }

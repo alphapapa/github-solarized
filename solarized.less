@@ -157,8 +157,15 @@ input, .input-mini {
 .commit-tease, .commit-title {
     .background-color(highlight);
 
-    * {
+    *, .sha-block {
 	.background-color(highlight);
+	.text-color(comment);
+    }
+    a {
+	.text-color;
+    }
+    .sha {
+	.text-color;
     }
 }
 
@@ -179,7 +186,7 @@ input, .input-mini {
 .lang {
     .text-color(emphasized);
 }
-.octicon-repo {
+.octicon, .octicon-repo {
     .text-color;
 }
 
