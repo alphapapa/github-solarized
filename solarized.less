@@ -29,11 +29,17 @@
 .background-color(blue) {
     background-color: @blue !important;
 }
+.background-color(green) {
+    background-color: @green !important;
+}
 .background-color(highlight) {
     background-color: @color-background-highlight !important;
 }
 .background-color(highlight-extra) {
     background-color: @color-background-highlight-extra !important;
+}
+.background-color(orange) {
+    background-color: @orange !important;
 }
 .bold() {
     font-weight: bold !important;
@@ -93,7 +99,7 @@ body {
     .background-color;
     .text-color;
 }
-input, .input-mini, .input-contrast {
+input, .input-mini, .input-contrast, input.input-contrast {
     .background-color(highlight);
     .text-color;
 }
@@ -106,8 +112,15 @@ input, .input-mini, .input-contrast {
     .text-color;
 }
 .btn {
-    background :-moz-linear-gradient(@color-background-highlight-extra, @color-background-highlight) !important;
+    background-image: linear-gradient(@color-background-highlight-extra, @color-background-highlight) !important;
     .text-color(emphasized);
+}
+.btn-primary {
+    .background-color(green);
+    background-image: linear-gradient(@green,
+				      darken(@green, 10%))
+				     !important;
+    .text-color;
 }
 .contrib-number {
     .text-color(emphasized);
@@ -141,6 +154,16 @@ input, .input-mini, .input-contrast {
 .hidden-text-expander a {
     .background-color(highlight);
 }
+.issue-meta  {
+    .text-color(comment);
+}
+.issues-listing * {
+    .background-color;
+
+    a {
+	.text-color;
+    }
+}
 .markdown-body {
     code, pre {
 	.background-color(highlight);
@@ -150,7 +173,7 @@ input, .input-mini, .input-contrast {
     .background-color(highlight);
     .text-color(emphasized);
 }
-.octicon {
+.octicon, .octicon-repo-forked {
     .text-color(emphasized);
 
     &.type-icon-state-closed {
@@ -172,8 +195,18 @@ input, .input-mini, .input-contrast {
     .background-color(highlight-extra);
     .text-color(emphasized);
 }
+.subnav-item.selected {
+    .background-color(highlight);
+}
 .stats-switcher-wrapper {
     .background-color;
+}
+.table-list-header-toggle .btn-link {
+    .text-color(comment);
+
+    &.selected {
+	.text-color;
+    }
 }
 .text-emphasized {
     .text-color(emphasized);
@@ -305,6 +338,10 @@ input, .input-mini, .input-contrast {
     &.selected {
 	.background-color(highlight);
 	.text-color(emphasized);
+
+	&:after {
+	    .background-color(orange);
+	}
     }
 }
 .sunken-menu-separator {

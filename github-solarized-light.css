@@ -11,7 +11,8 @@
   }
   input,
   .input-mini,
-  .input-contrast {
+  .input-contrast,
+  input.input-contrast {
     background-color: #eee8d5 !important;
     color: #657b83 !important;
   }
@@ -23,8 +24,13 @@
     color: #657b83 !important;
   }
   .btn {
-    background: -moz-linear-gradient(#93a1a1, #eee8d5) !important;
+    background-image: linear-gradient(#93a1a1, #eee8d5) !important;
     color: #586e75 !important;
+  }
+  .btn-primary {
+    background-color: #859900 !important;
+    background-image: linear-gradient(#859900, #596600) !important;
+    color: #657b83 !important;
   }
   .contrib-number {
     color: #586e75 !important;
@@ -57,6 +63,15 @@
   .hidden-text-expander a {
     background-color: #eee8d5 !important;
   }
+  .issue-meta {
+    color: #93a1a1 !important;
+  }
+  .issues-listing * {
+    background-color: #fdf6e3 !important;
+  }
+  .issues-listing * a {
+    color: #657b83 !important;
+  }
   .markdown-body code,
   .markdown-body pre {
     background-color: #eee8d5 !important;
@@ -65,16 +80,20 @@
     background-color: #eee8d5 !important;
     color: #586e75 !important;
   }
-  .octicon {
+  .octicon,
+  .octicon-repo-forked {
     color: #586e75 !important;
   }
-  .octicon.type-icon-state-closed {
+  .octicon.type-icon-state-closed,
+  .octicon-repo-forked.type-icon-state-closed {
     color: #dc322f !important;
   }
-  .octicon.type-icon-state-merged {
+  .octicon.type-icon-state-merged,
+  .octicon-repo-forked.type-icon-state-merged {
     color: #6c71c4 !important;
   }
-  .octicon.type-icon-state-open {
+  .octicon.type-icon-state-open,
+  .octicon-repo-forked.type-icon-state-open {
     color: #859900 !important;
   }
   .social-count {
@@ -85,8 +104,17 @@
     background-color: #93a1a1 !important;
     color: #586e75 !important;
   }
+  .subnav-item.selected {
+    background-color: #eee8d5 !important;
+  }
   .stats-switcher-wrapper {
     background-color: #fdf6e3 !important;
+  }
+  .table-list-header-toggle .btn-link {
+    color: #93a1a1 !important;
+  }
+  .table-list-header-toggle .btn-link.selected {
+    color: #657b83 !important;
   }
   .text-emphasized {
     color: #586e75 !important;
@@ -189,6 +217,9 @@
   .sunken-menu-item.selected {
     background-color: #eee8d5 !important;
     color: #586e75 !important;
+  }
+  .sunken-menu-item.selected:after {
+    background-color: #cb4b16 !important;
   }
   .sunken-menu-separator {
     background-image: radial-gradient(farthest-side at left top, #eee8d5, rgba(238, 213, 232, 0));
