@@ -1,58 +1,217 @@
-// From https://github.com/altercation/solarized
+// * solarized.less
 
 // ** Solarized colors
-@base03:	#002b36;
-@base02:	#073642;
-@base01:	#586e75;
-@base00:	#657b83;
-@base0:	    #839496;
-@base1:	    #93a1a1;
-@base2:	    #eee8d5;
-@base3:	    #fdf6e3;
-@yellow:	#b58900;
-@orange:	#cb4b16;
-@red:	    #dc322f;
-@magenta:	#d33682;
-@violet:	#6c71c4;
-@blue:	    #268bd2;
-@cyan:	    #2aa198;
-@green:	    #859900;
+// From https://github.com/altercation/solarized
+@base03: #002b36;
+@base02: #073642;
+@base01: #586e75;
+@base00: #657b83;
+@base0: #839496;
+@base1: #93a1a1;
+@base2: #eee8d5;
+@base3: #fdf6e3;
+@yellow: #b58900;
+@orange: #cb4b16;
+@red: #dc322f;
+@magenta: #d33682;
+@violet: #6c71c4;
+@blue: #268bd2;
+@cyan: #2aa198;
+@green: #859900;
 
 // ** Mixins
 .a-color() {
     color: @blue !important;
 }
+.background-color() {
+    background-color: @color-background !important;
+}
+.background-color(highlight) {
+    background-color: @color-background-highlight !important;
+}
+.background-color(highlight-extra) {
+    background-color: @color-background-highlight-extra !important;
+}
 .border-color() {
-    border-color: @base00 !important;
+    border-color: @color-border !important;
+}
+.box-shadow() {
+    box-shadow: 1px 0px 0px @color-background-highlight inset !important;
+}
+.text-color() {
+    color: @color-text !important;
+}
+.text-color(emphasized) {
+    color: @color-text-emphasized !important;
 }
 
 // ** HTML elements
+
+// *** All elements
+* {
+    .border-color;
+}
+
+// *** Specific elements
 a {
     .a-color;
 }
 body {
     .background-color;
-    .border-color;
+    .text-color;
+}
+input, .input-mini {
+    .background-color(highlight);
     .text-color;
 }
 
 // ** GitHub classes
+.boxed-group, .boxed-group *{
+    .background-color;
+}
+.btn {
+    background :-moz-linear-gradient(@color-background-highlight-extra, @color-background-highlight) !important;
+    .text-color(emphasized);
+}
+.contrib-number {
+    .text-color(emphasized);
+}
+.counter {
+    .background-color(highlight-extra);
+    .text-color(emphasized);
+}
 .file-wrap * {
     .background-color;
     .text-color;
 }
-.header {
-    .background-color;
-}
-.js-directory-link {
-    .a-color;
-}
-.js-site-search-field {
+.flash {
     .background-color(highlight);
+    .text-color(emphasized);
+}
+.new-user-avatar-cta {
+    .background-color(highlight);
+    .text-color(emphasized);
+}
+.octicon {
+    .text-color(emphasized);
+}
+.social-count {
+    .background-color(highlight);
+    .text-color(emphasized);
+}
+.scope-badge {
+    .background-color(highlight-extra);
+    .text-color(emphasized);
 }
 .stats-switcher-wrapper {
     .background-color;
 }
 .text-emphasized {
     .text-color(emphasized);
+}
+// *** commit
+.commit, .commit-meta {
+    .background-color;
+}
+.commit-tease, .commit-title {
+    .background-color(highlight);
+
+    * {
+	.background-color(highlight);
+    }
+}
+
+// *** conversation list
+.conversation-list-heading {
+    .inner {
+	.background-color;
+    }
+}
+// *** header
+.header {
+    .background-color;
+
+    a {
+	.text-color(emphasized);
+    }
+}
+.lang {
+    .text-color(emphasized);
+}
+.octicon-repo {
+    .text-color;
+}
+
+
+// *** js
+.js-directory-link {
+    .a-color;
+}
+.js-site-search-form * {
+    .background-color(highlight);
+    .border-color;
+}
+
+
+// *** sidebar
+.repository-sidebar {
+    .background-color;
+}
+
+// **** sunken-menu
+.sunken-menu {
+    background-image: linear-gradient(to right,
+				      @color-background 0%,
+				      @color-background-highlight 8px) !important;
+    box-shadow: 1px 0px 0px @color-background-highlight inset;
+
+    &:before {
+	background-image: linear-gradient(@color-background,
+					  rgba(red(@color-background-highlight),
+					       blue(@color-background-highlight),
+					       green(@color-background-highlight),
+					       0))
+					 !important;
+    }
+    &:after {
+	background-image: linear-gradient(rgba(red(@color-background-highlight),
+					       blue(@color-background-highlight),
+					       green(@color-background-highlight),
+					       0),
+					  @color-background)
+					 !important;
+    }
+}
+.sunken-menu-item {
+    &.selected {
+	.background-color(highlight);
+	.text-color(emphasized);
+    }
+}
+.sunken-menu-separator {
+    background-image: radial-gradient(farthest-side at left top,
+				      @color-background-highlight,
+				      rgba(red(@color-background-highlight),
+					   blue(@color-background-highlight),
+					   green(@color-background-highlight),
+					   0));
+}
+
+
+// *** states
+.state-closed {
+    background-color: @red !important;
+}
+.state-open {
+    background-color: @green !important;
+}
+
+// *** tabnav
+.tabnav-tab {
+    .background-color;
+    border-color: transparent transparent @color-border !important;
+
+    &.selected {
+	.border-color;
+    }
 }

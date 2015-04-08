@@ -1,21 +1,20 @@
-@import "solarized.less";
+// * dark.less
 
-// ** Colors
-@color-background: @base03;
-@color-background-highlight: @base02;
-@color-text: @base0;
-@color-text-emphasized: @base1;
+// This file exports directly to a userstyle CSS file, ready for use
+// in the browser.  It also contains the only differences between the
+// light and dark themes.
 
-// ** Mixins
-.background-color() {
-    background-color: @color-background !important;
-}
-.background-color(highlight) {
-    background-color: @color-background-highlight !important;
-}
-.text-color() {
-    color: @color-text !important;
-}
-.text-color(emphasized) {
-    color: @color-text-emphasized !important;
+@-moz-document domain("github.com") {
+    @import "solarized.less";
+
+    // ** Colors
+    @color-background: @base03;
+    @color-background-highlight: @base02;
+    @color-background-highlight-extra: @base01;
+    @color-border: @base00;
+    @color-text: @base0;
+    @color-text-emphasized: @base1;
+
+    // ** Mixins
+
 }
