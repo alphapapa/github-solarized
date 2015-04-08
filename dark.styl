@@ -1,0 +1,18 @@
+@-moz-document domain("github.com") {
+
+  @require "colors"
+
+  // ** Colors
+  color-background = base03
+  color-background-highlight = base02
+  color-background-highlight-extra = base01
+  color-border = base00
+  color-text = base0
+  comment = base01
+  emphasized = base1
+
+  // Unlike with Less, in Stylus, order matters...sort of.  It's ok
+  // for the vars above to refer to vars that are defined in the
+  // following require...
+  @require "solarized"
+}

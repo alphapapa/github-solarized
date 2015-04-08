@@ -1,12 +1,12 @@
 * github-solarized
-This is a set of user-stylesheets based upon the [[http://ethanschoonover.com/solarized][Solarized]] theme ([[https://github.com/altercation/solarized][repo]]).  It uses [[http://lesscss.org/][Less]] to generate the CSS.  The home of this stylesheet is at [[https://github.com/alphapapa/github-solarized]].
+This is a set of user-stylesheets based upon the [[http://ethanschoonover.com/solarized][Solarized]] theme ([[https://github.com/altercation/solarized][repo]]).  It uses [[http://learnboost.github.com/stylus/][Stylus]] to generate the CSS.  The home of this stylesheet is at [[https://github.com/alphapapa/github-solarized]].
 ** Installation
 Install the =github-solarized-dark.css= file according to your browser's method (e.g. using the Stylish extension in Firefox).
 ** Development
-To make changes, just edit the =.less= files and run =make=.  (You need to have Less installed, of course.)
+To make changes, just edit the =.styl= files and run =make=.  (You need to have Stylus installed, of course.)
 
-Basically, nearly the only things that should be in =dark.less= or =light.less= should be changes to the =@color-= variables that adjust it for light or dark.  Everything else should go in =solarized.less=.  Colors are defined as =@color-= variables, and mixins are used to insert common CSS properties (like =color=, =background=, etc) with =!important=.  Most changes can be made without inserting CSS properties directly into the selectors.
+Basically, nearly the only things that should be in =dark.styl= or =light.styl= should be changes to the =@color-= variables that adjust it for light or dark.  Everything else should go in =solarized.less=.  Colors are defined as =@color-= variables, and mixins are used to insert common CSS properties (like =color=, =background=, etc) with =!important=.  Most changes can be made without inserting CSS properties directly into the selectors.
 
-I highly recommend using Emacs with =less-css-mode= and =outshine-mode=, but, of course, you can use whatever you like.  :)
+I highly recommend using Emacs with =stylus-mode= and =outshine-mode=, but, of course, you can use whatever you like.  :)
 ** License
 Really?  Come on, it's just some CSS.  Just have fun and share!

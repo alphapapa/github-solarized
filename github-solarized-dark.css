@@ -29,7 +29,7 @@
   }
   .btn-primary {
     background-color: #859900 !important;
-    background-image: linear-gradient(#859900, #596600) !important;
+    background-image: linear-gradient(#859900, #788a00) !important;
     color: #839496 !important;
   }
   .contrib-number {
@@ -95,6 +95,9 @@
   .octicon.type-icon-state-open,
   .octicon-repo-forked.type-icon-state-open {
     color: #859900 !important;
+  }
+  .repository-description {
+    color: #839496 !important;
   }
   .social-count {
     background-color: #073642 !important;
@@ -209,10 +212,10 @@
     box-shadow: 1px 0px 0px #073642 inset;
   }
   .sunken-menu:before {
-    background-image: linear-gradient(#002b36, rgba(7, 66, 54, 0)) !important;
+    background-image: linear-gradient(#002b36, rgba(7,66,54,0)) !important;
   }
   .sunken-menu:after {
-    background-image: linear-gradient(rgba(7, 66, 54, 0), #002b36) !important;
+    background-image: linear-gradient(rgba(7,66,54,0), #002b36) !important;
   }
   .sunken-menu-item.selected {
     background-color: #073642 !important;
@@ -222,7 +225,7 @@
     background-color: #cb4b16 !important;
   }
   .sunken-menu-separator {
-    background-image: radial-gradient(farthest-side at left top, #073642, rgba(7, 66, 54, 0));
+    background-image: radial-gradient(farthest-side at left top, #073642, rgba(7,66,54,0));
   }
   .state .octicon {
     color: #93a1a1 !important;
@@ -280,3 +283,4 @@
     font-weight: bold !important;
   }
 }
+

@@ -1,6 +1,6 @@
 all: dark light
 
-dark: solarized.less dark.less
-	lessc dark.less >github-solarized-dark.css
-light: solarized.less light.less
-	lessc light.less >github-solarized-light.css
+dark: solarized.styl dark.styl
+	stylus -p <dark.styl >github-solarized-dark.css
+light: solarized.styl light.styl
+	stylus -p <light.styl >github-solarized-light.css
