@@ -1,0 +1,178 @@
+@-moz-document domain("github.com") {
+  * {
+    border-color: #839496 !important;
+  }
+  a {
+    color: #268bd2 !important;
+  }
+  body {
+    background-color: #fdf6e3 !important;
+    color: #657b83 !important;
+  }
+  input,
+  .input-mini {
+    background-color: #eee8d5 !important;
+    color: #657b83 !important;
+  }
+  .boxed-group,
+  .boxed-group * {
+    background-color: #fdf6e3 !important;
+  }
+  .breadcrumb strong.final-path {
+    color: #657b83 !important;
+  }
+  .btn {
+    background: -moz-linear-gradient(#93a1a1, #eee8d5) !important;
+    color: #586e75 !important;
+  }
+  .contrib-number {
+    color: #586e75 !important;
+  }
+  .counter {
+    background-color: #93a1a1 !important;
+    color: #586e75 !important;
+  }
+  .file-header {
+    background-color: #eee8d5 !important;
+  }
+  .file-history-tease .participation {
+    background-color: #fdf6e3 !important;
+  }
+  .file-wrap * {
+    background-color: #fdf6e3 !important;
+    color: #657b83 !important;
+  }
+  .flash {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+  }
+  .markdown-body code {
+    background-color: #eee8d5 !important;
+  }
+  .new-user-avatar-cta {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+  }
+  .octicon {
+    color: #586e75 !important;
+  }
+  .social-count {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+  }
+  .scope-badge {
+    background-color: #93a1a1 !important;
+    color: #586e75 !important;
+  }
+  .stats-switcher-wrapper {
+    background-color: #fdf6e3 !important;
+  }
+  .text-emphasized {
+    color: #586e75 !important;
+  }
+  .commit,
+  .commit-meta {
+    background-color: #fdf6e3 !important;
+  }
+  .commit-tease,
+  .commit-title {
+    background-color: #eee8d5 !important;
+  }
+  .commit-tease *,
+  .commit-title * {
+    background-color: #eee8d5 !important;
+  }
+  .conversation-list-heading .inner {
+    background-color: #fdf6e3 !important;
+  }
+  .header {
+    background-color: #fdf6e3 !important;
+  }
+  .header a {
+    color: #586e75 !important;
+  }
+  .lang {
+    color: #586e75 !important;
+  }
+  .octicon-repo {
+    color: #657b83 !important;
+  }
+  .js-directory-link {
+    color: #268bd2 !important;
+  }
+  .js-site-search-form * {
+    background-color: #eee8d5 !important;
+    border-color: #839496 !important;
+  }
+  .repository-sidebar {
+    background-color: #fdf6e3 !important;
+  }
+  .sunken-menu {
+    background-image: linear-gradient(to right, #fdf6e3 0%, #eee8d5 8px) !important;
+    box-shadow: 1px 0px 0px #eee8d5 inset;
+  }
+  .sunken-menu:before {
+    background-image: linear-gradient(#fdf6e3, rgba(238, 213, 232, 0)) !important;
+  }
+  .sunken-menu:after {
+    background-image: linear-gradient(rgba(238, 213, 232, 0), #fdf6e3) !important;
+  }
+  .sunken-menu-item.selected {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+  }
+  .sunken-menu-separator {
+    background-image: radial-gradient(farthest-side at left top, #eee8d5, rgba(238, 213, 232, 0));
+  }
+  .state-closed {
+    background-color: #dc322f !important;
+  }
+  .state-open {
+    background-color: #859900 !important;
+  }
+  .tabnav-tab {
+    background-color: #fdf6e3 !important;
+    border-color: transparent transparent #839496 !important;
+  }
+  .tabnav-tab.selected {
+    border-color: #839496 !important;
+  }
+  .blob-code {
+    color: #657b83 !important;
+  }
+  .blob-num {
+    color: #93a1a1 !important;
+  }
+  .file {
+    color: #657b83 !important;
+  }
+  .pl-c {
+    color: #93a1a1 !important;
+  }
+  .pl-c1 {
+    color: #268bd2 !important;
+  }
+  .pl-e {
+    color: #b58900 !important;
+  }
+  .pl-en {
+    color: #268bd2 !important;
+  }
+  .pl-k {
+    color: #859900 !important;
+    font-weight: bold !important;
+  }
+  .pl-pds {
+    color: #2aa198 !important;
+  }
+  .pl-s {
+    color: #2aa198 !important;
+  }
+  .pl-smi {
+    color: #657b83 !important;
+  }
+  .pl-v {
+    color: #859900 !important;
+    font-weight: bold !important;
+  }
+}
