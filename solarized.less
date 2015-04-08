@@ -26,6 +26,9 @@
 .background-color() {
     background-color: @color-background !important;
 }
+.background-color(blue) {
+    background-color: @blue !important;
+}
 .background-color(highlight) {
     background-color: @color-background-highlight !important;
 }
@@ -123,6 +126,14 @@ input, .input-mini, .input-contrast {
     .background-color;
     .text-color;
 }
+.filter-item {
+    .text-color;
+
+    &.selected {
+	.background-color(highlight);
+	.text-color(emphasized);
+    }
+}
 .flash {
     .background-color(highlight);
     .text-color(emphasized);
@@ -141,6 +152,17 @@ input, .input-mini, .input-contrast {
 }
 .octicon {
     .text-color(emphasized);
+
+    &.type-icon-state-closed {
+	.text-color(red);
+    }
+    &.type-icon-state-merged {
+	.text-color(violet);
+    }
+    &.type-icon-state-open {
+	.text-color(green);
+    }
+
 }
 .social-count {
     .background-color(highlight);
@@ -241,6 +263,12 @@ input, .input-mini, .input-contrast {
 }
 
 
+// *** notifications
+.notifications-list {
+    a {
+	.text-color;
+    }
+}
 // *** sidebar
 .repository-sidebar {
     .background-color;
@@ -301,6 +329,7 @@ input, .input-mini, .input-contrast {
 .tabnav-tab {
     .background-color;
     border-color: transparent transparent @color-border !important;
+    .text-color;
 
     &.selected {
 	.border-color;

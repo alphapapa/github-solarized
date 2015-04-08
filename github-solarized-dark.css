@@ -43,6 +43,13 @@
     background-color: #002b36 !important;
     color: #839496 !important;
   }
+  .filter-item {
+    color: #839496 !important;
+  }
+  .filter-item.selected {
+    background-color: #073642 !important;
+    color: #93a1a1 !important;
+  }
   .flash {
     background-color: #073642 !important;
     color: #93a1a1 !important;
@@ -60,6 +67,15 @@
   }
   .octicon {
     color: #93a1a1 !important;
+  }
+  .octicon.type-icon-state-closed {
+    color: #dc322f !important;
+  }
+  .octicon.type-icon-state-merged {
+    color: #6c71c4 !important;
+  }
+  .octicon.type-icon-state-open {
+    color: #859900 !important;
   }
   .social-count {
     background-color: #073642 !important;
@@ -151,6 +167,9 @@
     background-color: #073642 !important;
     border-color: #657b83 !important;
   }
+  .notifications-list a {
+    color: #839496 !important;
+  }
   .repository-sidebar {
     background-color: #002b36 !important;
   }
@@ -183,6 +202,7 @@
   .tabnav-tab {
     background-color: #002b36 !important;
     border-color: transparent transparent #657b83 !important;
+    color: #839496 !important;
   }
   .tabnav-tab.selected {
     border-color: #657b83 !important;

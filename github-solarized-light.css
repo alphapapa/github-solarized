@@ -43,6 +43,13 @@
     background-color: #fdf6e3 !important;
     color: #657b83 !important;
   }
+  .filter-item {
+    color: #657b83 !important;
+  }
+  .filter-item.selected {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+  }
   .flash {
     background-color: #eee8d5 !important;
     color: #586e75 !important;
@@ -60,6 +67,15 @@
   }
   .octicon {
     color: #586e75 !important;
+  }
+  .octicon.type-icon-state-closed {
+    color: #dc322f !important;
+  }
+  .octicon.type-icon-state-merged {
+    color: #6c71c4 !important;
+  }
+  .octicon.type-icon-state-open {
+    color: #859900 !important;
   }
   .social-count {
     background-color: #eee8d5 !important;
@@ -151,6 +167,9 @@
     background-color: #eee8d5 !important;
     border-color: #839496 !important;
   }
+  .notifications-list a {
+    color: #657b83 !important;
+  }
   .repository-sidebar {
     background-color: #fdf6e3 !important;
   }
@@ -183,6 +202,7 @@
   .tabnav-tab {
     background-color: #fdf6e3 !important;
     border-color: transparent transparent #839496 !important;
+    color: #657b83 !important;
   }
   .tabnav-tab.selected {
     border-color: #839496 !important;
