@@ -1,0 +1,29 @@
+@-moz-document domain("github.com") {
+  a {
+    color: #268bd2 !important;
+  }
+  body {
+    background-color: #002b36 !important;
+    border-color: #657b83 !important;
+    color: #839496 !important;
+  }
+  .file-wrap * {
+    background-color: #002b36 !important;
+    color: #839496 !important;
+  }
+  .header {
+    background-color: #002b36 !important;
+  }
+  .js-directory-link {
+    color: #268bd2 !important;
+  }
+  .js-site-search-field {
+    background-color: #073642 !important;
+  }
+  .stats-switcher-wrapper {
+    background-color: #002b36 !important;
+  }
+  .text-emphasized {
+    color: #93a1a1 !important;
+  }
+}

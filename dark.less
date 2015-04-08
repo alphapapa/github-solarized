@@ -1,0 +1,21 @@
+@import "solarized.less";
+
+// ** Colors
+@color-background: @base03;
+@color-background-highlight: @base02;
+@color-text: @base0;
+@color-text-emphasized: @base1;
+
+// ** Mixins
+.background-color() {
+    background-color: @color-background !important;
+}
+.background-color(highlight) {
+    background-color: @color-background-highlight !important;
+}
+.text-color() {
+    color: @color-text !important;
+}
+.text-color(emphasized) {
+    color: @color-text-emphasized !important;
+}
