@@ -32,6 +32,9 @@
 .background-color(highlight-extra) {
     background-color: @color-background-highlight-extra !important;
 }
+.bold() {
+    font-weight: bold !important;
+}
 .border-color() {
     border-color: @color-border !important;
 }
@@ -41,8 +44,32 @@
 .text-color() {
     color: @color-text !important;
 }
+.text-color(blue) {
+    color: @blue !important;
+}
+.text-color(comment) {
+    color: @color-text-comment !important;
+}
+.text-color(cyan) {
+    color: @cyan !important;
+}
+.text-color(green) {
+    color: @green !important;
+}
 .text-color(emphasized) {
     color: @color-text-emphasized !important;
+}
+.text-color(magenta) {
+    color: @magenta !important;
+}
+.text-color(orange) {
+    color: @orange !important;
+}
+.text-color(violet) {
+    color: @violet !important;
+}
+.text-color(yellow) {
+    color: @yellow !important;
 }
 
 // ** HTML elements
@@ -66,8 +93,11 @@ input, .input-mini {
 }
 
 // ** GitHub classes
-.boxed-group, .boxed-group *{
+.boxed-group, .boxed-group * {
     .background-color;
+}
+.breadcrumb strong.final-path {
+    .text-color;
 }
 .btn {
     background :-moz-linear-gradient(@color-background-highlight-extra, @color-background-highlight) !important;
@@ -79,6 +109,12 @@ input, .input-mini {
 .counter {
     .background-color(highlight-extra);
     .text-color(emphasized);
+}
+.file-header {
+    .background-color(highlight)
+}
+.file-history-tease .participation {
+    .background-color;
 }
 .file-wrap * {
     .background-color;
@@ -217,4 +253,44 @@ input, .input-mini {
     &.selected {
 	.border-color;
     }
+}
+
+// *** Code syntax highlighting
+.blob-code {
+    .text-color;
+}
+.blob-num {
+    .text-color(comment);
+}
+.file {
+    .text-color;
+}
+.pl-c {
+    .text-color(comment);
+}
+.pl-c1 {
+    .text-color(blue);
+}
+.pl-e {
+    .text-color(yellow);
+}
+.pl-en {
+    .text-color(blue);
+}
+.pl-k {
+    .text-color(green);
+    .bold;
+}
+.pl-pds {
+    .text-color(cyan);
+}
+.pl-s {
+    .text-color(cyan);
+}
+.pl-smi {
+    .text-color;
+}
+.pl-v {
+    .text-color(green);
+    .bold;
 }

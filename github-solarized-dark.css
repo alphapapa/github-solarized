@@ -18,6 +18,9 @@
   .boxed-group * {
     background-color: #002b36 !important;
   }
+  .breadcrumb strong.final-path {
+    color: #839496 !important;
+  }
   .btn {
     background: -moz-linear-gradient(#586e75, #073642) !important;
     color: #93a1a1 !important;
@@ -28,6 +31,12 @@
   .counter {
     background-color: #586e75 !important;
     color: #93a1a1 !important;
+  }
+  .file-header {
+    background-color: #073642 !important;
+  }
+  .file-history-tease .participation {
+    background-color: #002b36 !important;
   }
   .file-wrap * {
     background-color: #002b36 !important;
@@ -127,5 +136,43 @@
   }
   .tabnav-tab.selected {
     border-color: #657b83 !important;
+  }
+  .blob-code {
+    color: #839496 !important;
+  }
+  .blob-num {
+    color: #586e75 !important;
+  }
+  .file {
+    color: #839496 !important;
+  }
+  .pl-c {
+    color: #586e75 !important;
+  }
+  .pl-c1 {
+    color: #268bd2 !important;
+  }
+  .pl-e {
+    color: #b58900 !important;
+  }
+  .pl-en {
+    color: #268bd2 !important;
+  }
+  .pl-k {
+    color: #859900 !important;
+    font-weight: bold !important;
+  }
+  .pl-pds {
+    color: #2aa198 !important;
+  }
+  .pl-s {
+    color: #2aa198 !important;
+  }
+  .pl-smi {
+    color: #839496 !important;
+  }
+  .pl-v {
+    color: #859900 !important;
+    font-weight: bold !important;
   }
 }
