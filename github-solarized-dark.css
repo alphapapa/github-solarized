@@ -193,6 +193,9 @@
   .sunken-menu-separator {
     background-image: radial-gradient(farthest-side at left top, #073642, rgba(7, 66, 54, 0));
   }
+  .state .octicon {
+    color: #93a1a1 !important;
+  }
   .state-closed {
     background-color: #dc322f !important;
   }
