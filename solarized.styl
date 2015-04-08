@@ -104,20 +104,8 @@ input, .input-mini, .input-contrast, input.input-contrast
     background-color highlight
     color emphasized
 
-.octicon, .octicon-repo-forked
-    color emphasized
 
-    &.type-icon-state-closed
-        color red
 
-    &.type-icon-state-merged
-        color violet
-
-    &.type-icon-state-open
-        color green
-
-.repository-description
-    color()
 
 
 .social-count
@@ -203,6 +191,16 @@ input, .input-mini, .input-contrast, input.input-contrast
 .timeline-comment-header
     background-color highlight
 
+// *** files
+.files
+    *
+        color comment
+    tbody
+        tr
+            &:nth-child(odd) *
+                background-color highlight
+
+
 // *** header
 .header
     background-color()
@@ -210,13 +208,8 @@ input, .input-mini, .input-contrast, input.input-contrast
     a
         color emphasized
 
-
 .lang
     color emphasized
-
-.octicon, .octicon-repo
-    color()
-
 
 
 // *** js
@@ -232,6 +225,32 @@ input, .input-mini, .input-contrast, input.input-contrast
 .notifications-list
     a
         color()
+
+// *** octicon
+.octicon, .octicon-repo
+    color()
+
+.octicon, .octicon.octicon-git-compare, .octicon-repo-forked
+    color emphasized
+
+    &.type-icon-state-closed
+        color red
+
+    &.type-icon-state-merged
+        color violet
+
+    &.type-icon-state-open
+        color green
+
+
+// *** repository
+.repository-description
+    color()
+
+.repository-meta
+    .edit-repository-meta
+        label
+            color()
 
 
 // *** sidebar

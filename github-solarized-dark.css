@@ -80,25 +80,6 @@
     background-color: #073642 !important;
     color: #93a1a1 !important;
   }
-  .octicon,
-  .octicon-repo-forked {
-    color: #93a1a1 !important;
-  }
-  .octicon.type-icon-state-closed,
-  .octicon-repo-forked.type-icon-state-closed {
-    color: #dc322f !important;
-  }
-  .octicon.type-icon-state-merged,
-  .octicon-repo-forked.type-icon-state-merged {
-    color: #6c71c4 !important;
-  }
-  .octicon.type-icon-state-open,
-  .octicon-repo-forked.type-icon-state-open {
-    color: #859900 !important;
-  }
-  .repository-description {
-    color: #839496 !important;
-  }
   .social-count {
     background-color: #073642 !important;
     color: #93a1a1 !important;
@@ -178,6 +159,12 @@
   .timeline-comment-header {
     background-color: #073642 !important;
   }
+  .files * {
+    color: #586e75 !important;
+  }
+  .files tbody tr:nth-child(odd) * {
+    background-color: #073642 !important;
+  }
   .header {
     background-color: #002b36 !important;
   }
@@ -187,10 +174,6 @@
   .lang {
     color: #93a1a1 !important;
   }
-  .octicon,
-  .octicon-repo {
-    color: #839496 !important;
-  }
   .js-directory-link {
     color: #268bd2 !important;
   }
@@ -199,6 +182,36 @@
     border-color: #657b83 !important;
   }
   .notifications-list a {
+    color: #839496 !important;
+  }
+  .octicon,
+  .octicon-repo {
+    color: #839496 !important;
+  }
+  .octicon,
+  .octicon.octicon-git-compare,
+  .octicon-repo-forked {
+    color: #93a1a1 !important;
+  }
+  .octicon.type-icon-state-closed,
+  .octicon.octicon-git-compare.type-icon-state-closed,
+  .octicon-repo-forked.type-icon-state-closed {
+    color: #dc322f !important;
+  }
+  .octicon.type-icon-state-merged,
+  .octicon.octicon-git-compare.type-icon-state-merged,
+  .octicon-repo-forked.type-icon-state-merged {
+    color: #6c71c4 !important;
+  }
+  .octicon.type-icon-state-open,
+  .octicon.octicon-git-compare.type-icon-state-open,
+  .octicon-repo-forked.type-icon-state-open {
+    color: #859900 !important;
+  }
+  .repository-description {
+    color: #839496 !important;
+  }
+  .repository-meta .edit-repository-meta label {
     color: #839496 !important;
   }
   .repository-sidebar {
