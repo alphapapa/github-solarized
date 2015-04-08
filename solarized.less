@@ -65,6 +65,9 @@
 .text-color(orange) {
     color: @orange !important;
 }
+.text-color(red) {
+    color: @red !important;
+}
 .text-color(violet) {
     color: @violet !important;
 }
@@ -87,7 +90,7 @@ body {
     .background-color;
     .text-color;
 }
-input, .input-mini {
+input, .input-mini, .input-contrast {
     .background-color(highlight);
     .text-color;
 }
@@ -124,6 +127,9 @@ input, .input-mini {
     .background-color(highlight);
     .text-color(emphasized);
 }
+.hidden-text-expander a {
+    .background-color(highlight);
+}
 .markdown-body {
     code, pre {
 	.background-color(highlight);
@@ -150,9 +156,27 @@ input, .input-mini {
 .text-emphasized {
     .text-color(emphasized);
 }
+.text-diff-added {
+    .text-color(green);
+}
+.text-diff-deleted {
+    .text-color(red);
+}
+
+// *** branch
+.branch-action-body {
+    .background-color(highlight);
+}
+.branch-action-state-clean .branch-action-icon {
+    background-color: @green !important;
+}
+
 // *** commit
 .commit, .commit-meta {
     .background-color;
+}
+.commit-ref {
+    .background-color(highlight);
 }
 .commit-tease, .commit-title {
     .background-color(highlight);
@@ -174,6 +198,22 @@ input, .input-mini {
     .inner {
 	.background-color;
     }
+}
+// *** Discussions
+.comment-form-head.tabnav {
+    .background-color;
+}
+.discussion-timeline-actions {
+    .background-color;
+}
+.drag-and-drop {
+    .background-color(highlight);
+}
+.timeline-comment {
+    .background-color;
+}
+.timeline-comment-header {
+    .background-color(highlight);
 }
 // *** header
 .header {
@@ -203,6 +243,9 @@ input, .input-mini {
 
 // *** sidebar
 .repository-sidebar {
+    .background-color;
+}
+.thread-subscription-status {
     .background-color;
 }
 

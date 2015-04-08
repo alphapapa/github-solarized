@@ -10,7 +10,8 @@
     color: #657b83 !important;
   }
   input,
-  .input-mini {
+  .input-mini,
+  .input-contrast {
     background-color: #eee8d5 !important;
     color: #657b83 !important;
   }
@@ -46,6 +47,9 @@
     background-color: #eee8d5 !important;
     color: #586e75 !important;
   }
+  .hidden-text-expander a {
+    background-color: #eee8d5 !important;
+  }
   .markdown-body code,
   .markdown-body pre {
     background-color: #eee8d5 !important;
@@ -71,9 +75,24 @@
   .text-emphasized {
     color: #586e75 !important;
   }
+  .text-diff-added {
+    color: #859900 !important;
+  }
+  .text-diff-deleted {
+    color: #dc322f !important;
+  }
+  .branch-action-body {
+    background-color: #eee8d5 !important;
+  }
+  .branch-action-state-clean .branch-action-icon {
+    background-color: #859900 !important;
+  }
   .commit,
   .commit-meta {
     background-color: #fdf6e3 !important;
+  }
+  .commit-ref {
+    background-color: #eee8d5 !important;
   }
   .commit-tease,
   .commit-title {
@@ -97,6 +116,21 @@
   .conversation-list-heading .inner {
     background-color: #fdf6e3 !important;
   }
+  .comment-form-head.tabnav {
+    background-color: #fdf6e3 !important;
+  }
+  .discussion-timeline-actions {
+    background-color: #fdf6e3 !important;
+  }
+  .drag-and-drop {
+    background-color: #eee8d5 !important;
+  }
+  .timeline-comment {
+    background-color: #fdf6e3 !important;
+  }
+  .timeline-comment-header {
+    background-color: #eee8d5 !important;
+  }
   .header {
     background-color: #fdf6e3 !important;
   }
@@ -118,6 +152,9 @@
     border-color: #839496 !important;
   }
   .repository-sidebar {
+    background-color: #fdf6e3 !important;
+  }
+  .thread-subscription-status {
     background-color: #fdf6e3 !important;
   }
   .sunken-menu {
