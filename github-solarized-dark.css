@@ -1,6 +1,6 @@
 @-moz-document domain("github.com") {
   * {
-    border-color: #657b83 !important;
+    border-color: #073642 !important;
   }
   a {
     color: #268bd2 !important;
@@ -18,15 +18,23 @@
     background-color: #073642 !important;
     color: #839496 !important;
   }
-  .boxed-group,
   .boxed-group * {
+    border-color: #586e75 !important;
+  }
+  .boxed-group article {
     background-color: #002b36 !important;
+    color: #839496 !important;
+  }
+  .boxed-group > h3 {
+    background-color: #073642 !important;
+    color: #93a1a1 !important;
   }
   .breadcrumb strong.final-path {
     color: #839496 !important;
   }
   .btn {
     background-image: linear-gradient(#586e75, #073642) !important;
+    border-color: #586e75 !important;
     color: #93a1a1 !important;
   }
   .btn-primary,
@@ -97,6 +105,7 @@
   }
   .social-count {
     background-color: #073642 !important;
+    border-color: #586e75 !important;
     color: #93a1a1 !important;
   }
   .scope-badge {
@@ -204,7 +213,8 @@
     background-color: #073642 !important;
   }
   .header {
-    background-color: #002b36 !important;
+    background-color: #073642 !important;
+    border-bottom-color: #586e75 !important;
   }
   .header a {
     color: #93a1a1 !important;
@@ -215,9 +225,9 @@
   .js-directory-link {
     color: #268bd2 !important;
   }
-  .js-site-search-form * {
-    background-color: #073642 !important;
-    border-color: #657b83 !important;
+  .js-site-search-form input {
+    background-color: #002b36 !important;
+    border-color: #586e75 !important;
   }
   .notifications-list a {
     color: #839496 !important;
@@ -292,7 +302,7 @@
   }
   .tabnav-tab.selected {
     background-color: #002b36 !important;
-    border-color: #657b83 !important;
+    border-color: #073642 !important;
   }
   .blob-code {
     color: #839496 !important;

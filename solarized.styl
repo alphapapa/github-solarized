@@ -20,7 +20,7 @@ border-color(args...)
     if args
         c = args
     else
-        c = color-border
+        c = color-background-highlight
     border-color c i
 
 color(c = color-text)
@@ -40,14 +40,25 @@ textarea, .comment-form-textarea *
     color()
 
 // ** GitHub classes
-.boxed-group, .boxed-group *
-    background-color()
+.boxed-group
+    *
+        border-color color-background-highlight-extra
+
+    article
+        background-color()
+        color()
+
+    > h3
+        background-color highlight
+        color emphasized
+
 
 .breadcrumb strong.final-path
     color()
 
 .btn
     background-image linear-gradient(color-background-highlight-extra, color-background-highlight) i
+    border-color color-background-highlight-extra
     color emphasized
 
 // For some reason, the .issues-listing down below is overriding the
@@ -121,6 +132,7 @@ textarea, .comment-form-textarea *
 
 .social-count
     background-color highlight
+    border-color color-background-highlight-extra
     color emphasized
 
 .scope-badge
@@ -241,7 +253,8 @@ textarea, .comment-form-textarea *
 
 // *** header
 .header
-    background-color()
+    background-color highlight
+    border-bottom-color color-background-highlight-extra i
 
     a
         color emphasized
@@ -254,9 +267,9 @@ textarea, .comment-form-textarea *
 .js-directory-link
     a()
 
-.js-site-search-form *
-    background-color highlight
-    border-color()
+.js-site-search-form input
+    background-color()
+    border-color color-background-highlight-extra
 
 
 // *** notifications
