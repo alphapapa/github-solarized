@@ -84,9 +84,13 @@ textarea, .comment-form-textarea *
 .file-history-tease .participation
     background-color()
 
-.file-wrap *
+.file-wrap
     background-color()
+    border-color color-background-highlight-extra
     color()
+
+    *
+        background-color()
 
 .filter-item
     &.selected
@@ -127,6 +131,9 @@ textarea, .comment-form-textarea *
     background-color highlight
     color emphasized
 
+.overall-summary
+    border-color color-background-highlight-extra
+
 .progress-bar
     background-color highlight-extra
 
@@ -144,6 +151,7 @@ textarea, .comment-form-textarea *
 
 .stats-switcher-wrapper
     background-color()
+
 
 .table-list-header-toggle .btn-link
     color comment
@@ -186,10 +194,14 @@ textarea, .comment-form-textarea *
 
 .commit-tease, .commit-title
     background-color highlight
+    border-color emphasized emphasized color-background-highlight-extra emphasized
 
     *, .sha-block
         background-color highlight
         color comment
+
+    .commit-meta, .commit-meta *
+        background-color()
 
     a
         color()
@@ -233,6 +245,7 @@ textarea, .comment-form-textarea *
 
 .timeline-comment
     background-color()
+    border-color color-background-highlight-extra
 
 .timeline-comment-header
     background-color highlight
@@ -246,9 +259,9 @@ textarea, .comment-form-textarea *
     *
         color comment
     tbody
-        tr
-            &:nth-child(odd) *
-                background-color highlight
+        tr *
+            background-color highlight
+            border-color color-background
 
 
 // *** header
