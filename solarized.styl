@@ -156,6 +156,7 @@ textarea, .comment-form-textarea *
 
 // *** commit
 .commit, .commit-meta
+.commit-icon .octicon
     background-color()
 
 .commit-ref
@@ -183,14 +184,30 @@ textarea, .comment-form-textarea *
 
 
 // *** Discussions
+.blankslate
+    background-color highlight
+    color emphasized
 .comment-form-head.tabnav
     background-color()
+
+
+.discussion-item-closed
+
+    .discussion-item-icon
+        background-color red
+        color emphasized
 
 .discussion-timeline-actions
     background-color()
 
 .drag-and-drop
     background-color highlight
+
+.new-discussion-timeline .closed-banner
+    // Yes, it's strange that this requires using the border color as
+    // the background color, and vice-versa, but it does...
+    background-color color-border
+    border-color color-background
 
 .timeline-comment
     background-color()
