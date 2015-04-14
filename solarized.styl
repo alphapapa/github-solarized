@@ -92,10 +92,11 @@ textarea, .comment-form-textarea *
     color comment
 
 .issues-listing
-    background-color()
-
     a
         color()
+
+.discussion-timeline:before
+    background-color color-border
 
 
 .markdown-body
@@ -196,6 +197,10 @@ textarea, .comment-form-textarea *
 
 .timeline-comment-header
     background-color highlight
+.timeline-comment-wrapper
+    // Don't show extra borders around every comment
+    border-color color-background
+
 
 // *** files
 .files
