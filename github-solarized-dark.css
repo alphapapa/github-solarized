@@ -42,6 +42,9 @@
     background-color: #586e75 !important;
     color: #93a1a1 !important;
   }
+  .diffstat-bar {
+    color: #839496 !important;
+  }
   .file-header {
     background-color: #073642 !important;
   }
@@ -63,17 +66,20 @@
     background-color: #073642 !important;
     color: #93a1a1 !important;
   }
+  .gh-header-number {
+    color: #586e75 !important;
+  }
   .hidden-text-expander a {
     background-color: #073642 !important;
   }
   .issue-meta {
     color: #586e75 !important;
   }
-  .issues-listing {
-    background-color: #002b36 !important;
-  }
   .issues-listing a {
     color: #839496 !important;
+  }
+  .discussion-timeline:before {
+    background-color: #657b83 !important;
   }
   .markdown-body a {
     color: #268bd2 !important;
@@ -128,11 +134,16 @@
     background-color: #859900 !important;
   }
   .commit,
-  .commit-meta {
+  .commit-meta,
+  .commit-icon .octicon {
     background-color: #002b36 !important;
   }
   .commit-ref {
     background-color: #073642 !important;
+    color: #93a1a1 !important;
+  }
+  .commit-ref .user {
+    color: #2aa198 !important;
   }
   .commit-tease,
   .commit-title {
@@ -156,8 +167,16 @@
   .conversation-list-heading .inner {
     background-color: #002b36 !important;
   }
+  .blankslate {
+    background-color: #073642 !important;
+    color: #93a1a1 !important;
+  }
   .comment-form-head.tabnav {
     background-color: #002b36 !important;
+  }
+  .discussion-item-closed .discussion-item-icon {
+    background-color: #dc322f !important;
+    color: #93a1a1 !important;
   }
   .discussion-timeline-actions {
     background-color: #002b36 !important;
@@ -165,11 +184,18 @@
   .drag-and-drop {
     background-color: #073642 !important;
   }
+  .new-discussion-timeline .closed-banner {
+    background-color: #657b83 !important;
+    border-color: #002b36 !important;
+  }
   .timeline-comment {
     background-color: #002b36 !important;
   }
   .timeline-comment-header {
     background-color: #073642 !important;
+  }
+  .timeline-comment-wrapper {
+    border-color: #002b36 !important;
   }
   .files * {
     color: #586e75 !important;
@@ -252,7 +278,7 @@
   .sunken-menu-separator {
     background-image: radial-gradient(farthest-side at left top, #073642, rgba(7,66,54,0));
   }
-  .state .octicon {
+  .state {
     color: #93a1a1 !important;
   }
   .state-closed {
@@ -262,11 +288,10 @@
     background-color: #859900 !important;
   }
   .tabnav-tab {
-    background-color: #002b36 !important;
-    border-color: transparent transparent #657b83 !important;
-    color: #839496 !important;
+    border-color: transparent !important;
   }
   .tabnav-tab.selected {
+    background-color: #002b36 !important;
     border-color: #657b83 !important;
   }
   .blob-code {
