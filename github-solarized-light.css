@@ -36,6 +36,22 @@
   }
   .file-history-tease .participation {
     background-color: #fdf6e3 !important;
+    color: #657b83 !important;
+  }
+  .file-history-tease .participation .quickstat strong {
+    color: #657b83 !important;
+  }
+  .file-history-tease .participation a {
+    color: #93a1a1 !important;
+  }
+  .file-history-tease .author a {
+    color: #657b83 !important;
+  }
+  .file-history-tease-header {
+    background-color: #eee8d5 !important;
+  }
+  .file-info-divider {
+    background-color: #93a1a1 !important;
   }
   .file-wrap {
     background-color: #fdf6e3 !important;
