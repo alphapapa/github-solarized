@@ -118,9 +118,29 @@
     filter: opacity(50%);
   }
   .blob-code {
+    background-color: #002b36 !important;
     color: #839496 !important;
   }
+  .blob-code-addition {
+    background-color: rgba(232,255,77,0.1) !important;
+  }
+  .blob-code-addition .x {
+    background-color: #859900 !important;
+    color: #c1cacb !important;
+  }
+  .blob-code-deletion {
+    background-color: rgba(220,50,47,0.3) !important;
+  }
+  .blob-code-deletion .x {
+    background-color: #dc322f !important;
+    color: #c1cacb !important;
+  }
+  .blob-code-hunk {
+    background-color: #073642 !important;
+    border-color: #586e75 !important;
+  }
   .blob-num {
+    background-color: #002b36 !important;
     color: #586e75 !important;
   }
   .file {
@@ -177,8 +197,15 @@
   }
   .commit,
   .commit-meta,
-  .commit-icon .octicon {
+  .commit-icon .octicon,
+  .commit-group-title .octicon-git-commit {
     background-color: #002b36 !important;
+  }
+  .commit-author {
+    color: #839496 !important;
+  }
+  .commit-meta {
+    color: #586e75 !important;
   }
   .commit-ref {
     background-color: #073642 !important;
@@ -187,30 +214,57 @@
   .commit-ref .user {
     color: #2aa198 !important;
   }
-  .commit-tease,
   .commit-title {
+    text-shadow: 0px 1px rgba(0,43,54,0.5) !important;
+  }
+  .commit-title a {
+    color: #93a1a1 !important;
+  }
+  .commit-branches *,
+  .commit-tease,
+  .full-commit p.commit-title {
     background-color: #073642 !important;
     border-color: #93a1a1 #93a1a1 #586e75 #93a1a1 !important;
+    color: #93a1a1 !important;
   }
+  .commit-branches * *,
   .commit-tease *,
-  .commit-title *,
+  .full-commit p.commit-title *,
+  .commit-branches * .sha-block,
   .commit-tease .sha-block,
-  .commit-title .sha-block {
+  .full-commit p.commit-title .sha-block {
     background-color: #073642 !important;
     color: #586e75 !important;
   }
+  .commit-branches * .commit-meta,
   .commit-tease .commit-meta,
-  .commit-title .commit-meta,
+  .full-commit p.commit-title .commit-meta,
+  .commit-branches * .commit-meta *,
   .commit-tease .commit-meta *,
-  .commit-title .commit-meta * {
+  .full-commit p.commit-title .commit-meta * {
     background-color: #002b36 !important;
   }
+  .commit-branches * a,
   .commit-tease a,
-  .commit-title a {
+  .full-commit p.commit-title a {
     color: #839496 !important;
   }
+  .commit-branches * .sha,
   .commit-tease .sha,
-  .commit-title .sha {
+  .full-commit p.commit-title .sha {
+    color: #839496 !important;
+  }
+  .commits-listing:before {
+    background-color: #073642 !important;
+  }
+  .full-commit {
+    background-color: #073642 !important;
+    border-color: #586e75 !important;
+  }
+  .full-commit .authorship a {
+    color: #839496 !important;
+  }
+  .full-commit .sha-block > .sha {
     color: #839496 !important;
   }
   .blankslate {

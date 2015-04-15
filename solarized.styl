@@ -152,9 +152,25 @@ textarea, .comment-form-textarea *
 
 // *** Code syntax highlighting
 .blob-code
+    background-color()
     color()
+.blob-code-addition
+    background-color rgba(lighten(green, 50%), 0.1)
 
+    .x
+        background-color green
+        color lighten(color-text, 50%)
+.blob-code-deletion
+    background-color rgba(red, 0.3)
+
+    .x
+        background-color red
+        color lighten(color-text, 50%)
+.blob-code-hunk
+    background-color highlight
+    border-color comment
 .blob-num
+    background-color()
     color comment
 
 .file
@@ -213,10 +229,17 @@ textarea, .comment-form-textarea *
     background-color: green i
 
 // *** commit
-.commit, .commit-meta
+.commit
+.commit-meta
 .commit-icon .octicon
+.commit-group-title .octicon-git-commit
     background-color()
 
+
+.commit-author
+    color()
+.commit-meta
+    color comment
 .commit-ref
     background-color highlight
     color emphasized
@@ -224,9 +247,18 @@ textarea, .comment-form-textarea *
     .user
         color cyan
 
-.commit-tease, .commit-title
+.commit-title
+    text-shadow 0px 1px rgba(color-background, 0.5) i
+
+    a
+        color emphasized
+
+.commit-branches *
+.commit-tease
+.full-commit p.commit-title
     background-color highlight
     border-color emphasized emphasized color-background-highlight-extra emphasized
+    color emphasized
 
     *, .sha-block
         background-color highlight
@@ -239,6 +271,19 @@ textarea, .comment-form-textarea *
         color()
 
     .sha
+        color()
+
+.commits-listing:before
+    background-color highlight
+
+.full-commit
+    background-color highlight
+    border-color comment
+
+    .authorship a
+        color()
+
+    .sha-block > .sha
         color()
 
 // *** discussions
