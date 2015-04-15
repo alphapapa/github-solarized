@@ -367,11 +367,13 @@
   }
   .tabnav-tab {
     border-color: transparent !important;
+    color: #586e75 !important;
   }
   .tabnav-tab.selected {
     background-color: #002b36 !important;
     background-image: linear-gradient(#073642, #002b36) !important;
     border-color: #073642 !important;
+    color: #93a1a1 !important;
   }
 }
 
