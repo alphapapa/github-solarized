@@ -370,6 +370,7 @@
   }
   .tabnav-tab.selected {
     background-color: #fdf6e3 !important;
+    background-image: linear-gradient(#eee8d5, #fdf6e3) !important;
     border-color: #eee8d5 !important;
   }
 }
