@@ -10,7 +10,7 @@ Install the =github-solarized-dark.css= file (or you can use the light one, if y
 ** Development
 To make changes, just edit the =.styl= files and run =make=.  (You need to have Stylus installed, of course.)
 
-Basically, nearly the only things that should be in =dark.styl= or =light.styl= should be changes to the =@color-= variables that adjust it for light or dark.  Everything else should go in =solarized.less=.  Colors are defined as =@color-= variables, and mixins are used to insert common CSS properties (like =color=, =background=, etc) with =!important=.  Most changes can be made without inserting CSS properties directly into the selectors.
+Basically, nearly the only things that should be in =dark.styl= or =light.styl= should be changes to the =color-= variables that adjust it for light or dark.  Everything else should go in =solarized.styl=.  Colors are defined as =color-= variables, and mixins are used to insert common CSS properties (like =color=, =background=, etc) with =!important=.  Most changes can be made without inserting CSS properties directly into the selectors.
 
 I highly recommend using Emacs with =stylus-mode= and =outshine-mode=, but, of course, you can use whatever you like.  :)
 
