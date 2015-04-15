@@ -1,5 +1,10 @@
 * github-solarized
 This is a set of user-stylesheets based upon the [[http://ethanschoonover.com/solarized][Solarized]] theme ([[https://github.com/altercation/solarized][repo]]).  It uses [[http://learnboost.github.com/stylus/][Stylus]] to generate the CSS.  The home of this stylesheet is at [[https://github.com/alphapapa/github-solarized]].
+** Screenshots
+*** Dark
+[[dark.png]]
+*** Light
+[[light.png]]
 ** Installation
 Install the =github-solarized-dark.css= file (or you can use the light one, if you want...) according to your browser's method (e.g. using the Stylish extension in Firefox).
 ** Development
