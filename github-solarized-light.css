@@ -272,6 +272,9 @@
   .octicon-repo-forked.type-icon-state-open {
     color: #859900 !important;
   }
+  #readme .plain {
+    background-color: #fdf6e3 !important;
+  }
   .repository-description {
     color: #657b83 !important;
   }
