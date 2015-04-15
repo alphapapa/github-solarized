@@ -28,18 +28,26 @@ color(c = color-text)
 
 // ** HTML elements
 *
+    // This is handy, because it avoids having to specify the
+    // border-color in many other places.  But it took a while to make
+    // it work with .tabnav's borders.
     border-color()
+
 a
     a()
+
 body
     background-color()
     color()
+
 input, .input-mini, .input-contrast, input.input-contrast,
 textarea, .comment-form-textarea *
     background-color highlight
     color()
 
 // ** GitHub classes
+
+// *** Misc
 .boxed-group
     *
         border-color color-background-highlight-extra
@@ -52,21 +60,8 @@ textarea, .comment-form-textarea *
         background-color highlight
         color emphasized
 
-
 .breadcrumb strong.final-path
     color()
-
-.btn
-    background-image linear-gradient(color-background-highlight-extra, color-background-highlight) i
-    border-color color-background-highlight-extra
-    color emphasized
-
-// For some reason, the .issues-listing down below is overriding the
-// .btn-primary here unless I use .issues-listing here also
-.btn-primary, .issues-listing .btn-primary
-    background-color green
-    background-image linear-gradient(green, darken(green, 50%)) i
-    color emphasized
 
 .contrib-number
     color emphasized
@@ -119,18 +114,6 @@ textarea, .comment-form-textarea *
     a
         color()
 
-.discussion-timeline:before
-    background-color color-border
-
-
-.markdown-body
-
-    a
-        a()
-    code, pre
-        background-color highlight
-
-
 .new-user-avatar-cta
     background-color highlight
     color emphasized
@@ -177,221 +160,6 @@ textarea, .comment-form-textarea *
 .timeline-comment-avatar
     filter opacity(50%)
 
-// *** branch
-.branch-action-body
-    background-color highlight
-
-.branch-action-state-clean .branch-action-icon
-    background-color: green i
-
-
-// *** commit
-.commit, .commit-meta
-.commit-icon .octicon
-    background-color()
-
-.commit-ref
-    background-color highlight
-    color emphasized
-
-    .user
-        color cyan
-
-.commit-tease, .commit-title
-    background-color highlight
-    border-color emphasized emphasized color-background-highlight-extra emphasized
-
-    *, .sha-block
-        background-color highlight
-        color comment
-
-    .commit-meta, .commit-meta *
-        background-color()
-
-    a
-        color()
-
-    .sha
-        color()
-
-
-
-// *** conversation list
-.conversation-list-heading
-    .inner
-        background-color()
-
-
-// *** Discussions
-.blankslate
-    background-color highlight
-    color emphasized
-.comment-form-head.tabnav
-    background-color()
-
-
-.discussion-item-closed
-
-    .discussion-item-icon
-        background-color red
-        color emphasized
-
-.discussion-timeline-actions
-    background-color()
-
-.drag-and-drop
-    background-color highlight
-
-.new-discussion-timeline .closed-banner
-    // Yes, it's strange that this requires using the border color as
-    // the background color, and vice-versa, but it does...
-    background-color color-border
-    border-color color-background
-
-.timeline-comment
-    background-color()
-    border-color color-background-highlight-extra
-
-.timeline-comment-header
-    background-color highlight
-.timeline-comment-wrapper
-    // Don't show extra borders around every comment
-    border-color color-background
-
-
-// *** files
-.files
-    *
-        color comment
-    tbody
-        tr *
-            background-color highlight
-            border-color color-background
-
-
-// *** header
-.header
-    background-color highlight
-    border-bottom-color color-background-highlight-extra i
-
-    a
-        color emphasized
-
-.lang
-    color emphasized
-
-
-// *** js
-.js-directory-link
-    a()
-
-.js-site-search-form input
-    background-color()
-    border-color color-background-highlight-extra
-
-
-// *** notifications
-.notifications-list
-    a
-        color()
-    li
-        background-color()
-
-// *** octicon
-.octicon, .octicon-repo
-    color()
-
-.octicon, .octicon.octicon-git-compare, .octicon-repo-forked
-    color emphasized
-
-    &.type-icon-state-closed
-        color red
-
-    &.type-icon-state-merged
-        color violet
-
-    &.type-icon-state-open
-        color green
-
-// *** readmes
-#readme .plain
-    background-color()
-
-// *** repository
-.repository-description
-    color()
-
-.repository-meta
-    .edit-repository-meta
-        label
-            color()
-
-
-// *** sidebar
-.repository-sidebar
-    background-color()
-
-.thread-subscription-status
-    background-color()
-
-
-// **** sunken-menu
-.sunken-menu
-    background-image: linear-gradient(to right, color-background 0%, color-background-highlight 8px) i
-    box-shadow 1px 0px 0px color-background-highlight inset
-
-    &:before
-        background-image: linear-gradient(color-background, rgba(red(color-background-highlight),
-                                                                 blue(color-background-highlight),
-                                                                 green(color-background-highlight),
-                                                                 0)) i
-
-    &:after
-        background-image: linear-gradient(rgba(red(color-background-highlight),
-                                               blue(color-background-highlight),
-                                               green(color-background-highlight),
-                                               0),
-                                          color-background) i
-
-
-.sunken-menu-item
-    &.selected
-        background-color highlight
-        color emphasized
-
-        &:after
-            background-color orange
-
-
-
-.sunken-menu-separator
-    background-image: radial-gradient(farthest-side at left top,
-                                      color-background-highlight,
-                                      rgba(red(color-background-highlight),
-                                           blue(color-background-highlight),
-                                           green(color-background-highlight),
-                                           0))
-
-// *** states
-.state
-    color emphasized
-
-.state-closed
-    background-color red
-
-.state-open
-    background-color green
-
-
-// *** tabnav
-.tabnav-tab
-    border-color transparent
-    &.selected
-        background-color()
-        border-color()
-
-
-
 // *** Code syntax highlighting
 .blob-code
     color()
@@ -430,3 +198,221 @@ textarea, .comment-form-textarea *
 .pl-v
     color green
     bold()
+
+// *** branch
+.branch-action-body
+    background-color highlight
+
+.branch-action-state-clean .branch-action-icon
+    background-color: green i
+
+// *** commit
+.commit, .commit-meta
+.commit-icon .octicon
+    background-color()
+
+.commit-ref
+    background-color highlight
+    color emphasized
+
+    .user
+        color cyan
+
+.commit-tease, .commit-title
+    background-color highlight
+    border-color emphasized emphasized color-background-highlight-extra emphasized
+
+    *, .sha-block
+        background-color highlight
+        color comment
+
+    .commit-meta, .commit-meta *
+        background-color()
+
+    a
+        color()
+
+    .sha
+        color()
+
+// *** discussions
+.blankslate
+    background-color highlight
+    color emphasized
+.comment-form-head.tabnav
+    background-color()
+
+.conversation-list-heading
+    .inner
+        background-color()
+
+.discussion-item-closed
+    .discussion-item-icon
+        background-color red
+        color emphasized
+
+.discussion-timeline:before
+    background-color color-border
+
+.discussion-timeline-actions
+    background-color()
+
+.drag-and-drop
+    background-color highlight
+
+.new-discussion-timeline .closed-banner
+    // Yes, it's strange that this requires using the border color as
+    // the background color, and vice-versa, but it does...
+    background-color color-border
+    border-color color-background
+
+.timeline-comment
+    background-color()
+    border-color color-background-highlight-extra
+.timeline-comment-header
+    background-color highlight
+.timeline-comment-wrapper
+    // Don't show extra borders around every comment
+    border-color color-background
+
+
+// *** files
+.files
+    *
+        color comment
+    tbody
+        tr *
+            background-color highlight
+            border-color color-background
+
+// *** header
+.btn
+    background-image linear-gradient(color-background-highlight-extra, color-background-highlight) i
+    border-color color-background-highlight-extra
+    color emphasized
+
+.btn-primary, .issues-listing .btn-primary
+    // For some reason, the .issues-listing down below is overriding the
+    // .btn-primary here unless I use .issues-listing here also
+    background-color green
+    background-image linear-gradient(green, darken(green, 50%)) i
+    color emphasized
+
+.header
+    background-color highlight
+    border-bottom-color color-background-highlight-extra i
+
+    a
+        color emphasized
+
+.lang
+    color emphasized
+
+// *** js
+.js-directory-link
+    a()
+
+.js-site-search-form input
+    background-color()
+    border-color color-background-highlight-extra
+
+// *** notifications
+.notifications-list
+    a
+        color()
+    li
+        background-color()
+
+// *** octicon
+.octicon, .octicon-repo
+    color()
+
+.octicon, .octicon.octicon-git-compare, .octicon-repo-forked
+    color emphasized
+
+    &.type-icon-state-closed
+        color red
+
+    &.type-icon-state-merged
+        color violet
+
+    &.type-icon-state-open
+        color green
+
+// *** readmes
+#readme .plain
+    background-color()
+
+.markdown-body
+    a
+        a()
+    code, pre
+        background-color highlight
+
+// *** repository
+.repository-description
+    color()
+
+.repository-meta
+    .edit-repository-meta
+        label
+            color()
+
+// *** sidebar
+.repository-sidebar
+    background-color()
+
+.thread-subscription-status
+    background-color()
+
+// **** sunken-menu
+.sunken-menu
+    background-image: linear-gradient(to right, color-background 0%, color-background-highlight 8px) i
+    box-shadow 1px 0px 0px color-background-highlight inset
+
+    &:before
+        background-image: linear-gradient(color-background, rgba(red(color-background-highlight),
+                                                                 blue(color-background-highlight),
+                                                                 green(color-background-highlight),
+                                                                 0)) i
+
+    &:after
+        background-image: linear-gradient(rgba(red(color-background-highlight),
+                                               blue(color-background-highlight),
+                                               green(color-background-highlight),
+                                               0),
+                                          color-background) i
+
+.sunken-menu-item
+    &.selected
+        background-color highlight
+        color emphasized
+
+        &:after
+            background-color orange
+
+.sunken-menu-separator
+    background-image: radial-gradient(farthest-side at left top,
+                                      color-background-highlight,
+                                      rgba(red(color-background-highlight),
+                                           blue(color-background-highlight),
+                                           green(color-background-highlight),
+                                           0))
+
+// *** states
+.state
+    color emphasized
+
+.state-closed
+    background-color red
+
+.state-open
+    background-color green
+
+
+// *** tabnav
+.tabnav-tab
+    border-color transparent
+    &.selected
+        background-color()
+        border-color()
