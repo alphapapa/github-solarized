@@ -144,6 +144,7 @@
   .text-diff-deleted {
     color: #dc322f !important;
   }
+  .avatar,
   .timeline-comment-avatar {
     filter: opacity(50%);
   }
