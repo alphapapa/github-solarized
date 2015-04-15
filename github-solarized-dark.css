@@ -18,17 +18,6 @@
     background-color: #073642 !important;
     color: #839496 !important;
   }
-  .boxed-group * {
-    border-color: #586e75 !important;
-  }
-  .boxed-group article {
-    background-color: #002b36 !important;
-    color: #839496 !important;
-  }
-  .boxed-group > h3 {
-    background-color: #073642 !important;
-    color: #93a1a1 !important;
-  }
   .breadcrumb strong.final-path {
     color: #839496 !important;
   }
@@ -164,6 +153,20 @@
   .pl-v {
     color: #859900 !important;
     font-weight: bold !important;
+  }
+  .boxed-group * {
+    border-color: #586e75 !important;
+  }
+  .boxed-group article {
+    background-color: #002b36 !important;
+    color: #839496 !important;
+  }
+  .boxed-group > h3 {
+    background-color: #073642 !important;
+    color: #93a1a1 !important;
+  }
+  .boxed-group-inner {
+    background-color: #002b36 !important;
   }
   .branch-action-body {
     background-color: #073642 !important;
