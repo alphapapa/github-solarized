@@ -74,6 +74,10 @@
     background-color: #eee8d5 !important;
     color: #586e75 !important;
   }
+  .filter-item:hover {
+    background-color: #93a1a1 !important;
+    color: #586e75 !important;
+  }
   .flash {
     background-color: #eee8d5 !important;
     color: #586e75 !important;
@@ -247,6 +251,9 @@
   }
   .notifications-list a {
     color: #657b83 !important;
+  }
+  .notifications-list li {
+    background-color: #fdf6e3 !important;
   }
   .octicon,
   .octicon-repo {
