@@ -365,12 +365,15 @@
   .state-open {
     background-color: #859900 !important;
   }
+  .tabnav {
+    border-bottom-color: #93a1a1 !important;
+  }
   .tabnav-tab {
     border-color: transparent !important;
   }
   .tabnav-tab.selected {
     background-color: #fdf6e3 !important;
-    border-color: #eee8d5 !important;
+    border-color: #93a1a1 !important;
   }
 }
 
