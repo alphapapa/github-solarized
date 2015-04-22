@@ -355,6 +355,10 @@
     background-color: #fdf6e3 !important;
     border-color: #93a1a1 !important;
   }
+  a.label {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+  }
   .notifications-list a {
     color: #657b83 !important;
   }
@@ -471,6 +475,12 @@
   .state-open {
     background-color: #859900 !important;
   }
+  .subnav-links a:hover {
+    background-color: #eee8d5 !important;
+  }
+  .subnav-search input {
+    border-color: #93a1a1 !important;
+  }
   .tabnav-tab {
     border-color: transparent !important;
     color: #93a1a1 !important;
@@ -480,6 +490,16 @@
     background-image: linear-gradient(#eee8d5, #fdf6e3) !important;
     border-color: #eee8d5 !important;
     color: #586e75 !important;
+  }
+  .table-list * {
+    background-color: #fdf6e3 !important;
+  }
+  .table-list *:hover,
+  .table-list *:hover * {
+    background-color: #eee8d5 !important;
+  }
+  .table-list-header {
+    background-color: #eee8d5 !important;
   }
 }
 

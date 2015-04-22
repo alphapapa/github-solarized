@@ -378,7 +378,11 @@ textarea, .comment-form-textarea *
 .js-site-search-form input
     background-color()
     border-color color-background-highlight-extra
-
+// *** label
+a.label
+    background-color highlight
+    color emphasized
+    
 // *** notifications
 .notifications-list
     a
@@ -504,6 +508,15 @@ textarea, .comment-form-textarea *
     background-color green
 
 
+// *** subnav
+.subnav-links
+    a
+        &:hover
+            background-color highlight
+                    
+.subnav-search input
+    border-color comment
+    
 // *** tabnav
 .tabnav-tab
     border-color transparent
@@ -514,3 +527,14 @@ textarea, .comment-form-textarea *
         background-image linear-gradient(color-background-highlight, color-background) i
         border-color()
         color emphasized
+// *** tables
+.table-list
+    *
+        background-color()
+
+        &:hover
+        &:hover *
+            background-color highlight
+
+.table-list-header
+    background-color highlight            
