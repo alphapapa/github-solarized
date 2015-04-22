@@ -404,6 +404,10 @@
   .markdown-body table * pre {
     background-color: #eee8d5 !important;
   }
+  .markdown-body hr,
+  .markdown-body table * hr {
+    background-color: #586e75 !important;
+  }
   .repository-description {
     color: #657b83 !important;
   }
