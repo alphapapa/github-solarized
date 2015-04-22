@@ -414,6 +414,28 @@
   .repository-meta .edit-repository-meta label {
     color: #657b83 !important;
   }
+  .select-menu-modal {
+    border-color: #657b83 !important;
+  }
+  .select-menu-modal * {
+    background-color: #fdf6e3 !important;
+    color: #657b83 !important;
+  }
+  .select-menu-header,
+  .select-menu-header * {
+    background-color: #eee8d5 !important;
+    color: #586e75 !important;
+    text-shadow: none !important;
+  }
+  .select-menu-item:hover *,
+  .select-menu-item-icon:hover,
+  .select-menu-item.navigation-focus {
+    background-color: #93a1a1 !important;
+    color: #586e75 !important;
+  }
+  .select-menu-item.selected {
+    background-color: #93a1a1 !important;
+  }
   .repository-sidebar {
     background-color: #fdf6e3 !important;
   }
