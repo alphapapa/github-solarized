@@ -280,7 +280,13 @@
     background-color: #eee8d5 !important;
     border-color: #93a1a1 !important;
   }
+  .full-commit * {
+    text-shadow: none !important;
+  }
   .full-commit .authorship a {
+    color: #657b83 !important;
+  }
+  .full-commit .commit-desc pre {
     color: #657b83 !important;
   }
   .full-commit .sha-block > .sha {
