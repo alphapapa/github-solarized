@@ -141,14 +141,14 @@
     background-color: rgba(232,255,77,0.1) !important;
   }
   .blob-code-addition .x {
-    background-color: #859900 !important;
+    background-color: #647300 !important;
     color: #b1bec2 !important;
   }
   .blob-code-deletion {
     background-color: rgba(220,50,47,0.3) !important;
   }
   .blob-code-deletion .x {
-    background-color: #dc322f !important;
+    background-color: #721513 !important;
     color: #b1bec2 !important;
   }
   .blob-code-hunk {
