@@ -155,6 +155,9 @@
     background-color: #073642 !important;
     border-color: #586e75 !important;
   }
+  .blob-code-inner {
+    color: #839496 !important;
+  }
   .blob-num {
     background-color: #002b36 !important;
     color: #586e75 !important;
