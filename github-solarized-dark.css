@@ -165,6 +165,10 @@
   .file {
     color: #839496 !important;
   }
+  .form-control {
+    background-color: #073642 !important;
+    border-color: #586e75 !important;
+  }
   .pl-c {
     color: #586e75 !important;
   }
@@ -360,7 +364,8 @@
   .js-directory-link {
     color: #268bd2 !important;
   }
-  .js-site-search-form input {
+  .js-site-search-form input,
+  .js-chromeless-input-container {
     background-color: #002b36 !important;
     border-color: #586e75 !important;
   }
