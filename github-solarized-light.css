@@ -403,6 +403,30 @@
   .octicon-repo-forked.type-icon-state-open {
     color: #859900 !important;
   }
+  .pagination .current {
+    background-color: #93a1a1 !important;
+    color: #586e75 !important;
+  }
+  .pagination .disabled {
+    background-color: #eee8d5 !important;
+    color: #93a1a1 !important;
+  }
+  .pagination .disabled:hover {
+    background-color: #eee8d5 !important;
+  }
+  .pagination .gap {
+    background-color: #eee8d5 !important;
+    color: #93a1a1 !important;
+  }
+  .pagination a {
+    background-color: #eee8d5 !important;
+    border-color: #fdf6e3 !important;
+    color: #657b83 !important;
+  }
+  .pagination a:hover {
+    background-color: #93a1a1 !important;
+    color: #fdf6e3 !important;
+  }
   #readme .plain {
     background-color: #fdf6e3 !important;
   }

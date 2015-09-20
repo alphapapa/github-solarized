@@ -17,7 +17,6 @@ I highly recommend using Emacs with =stylus-mode= and =outshine-mode=, but, of c
 It's a good idea to avoid the use of =*= selectors wherever possible.  They tend to have unanticipated side-effects which can take time to track down.
 
 *** To-Do
-+ [[https://github.com/rg3/youtube-dl/issues][Page next/num/previous bar]]
 + [[https://github.com/openbible/sword/network][Network graphs]]
 + [[https://github.com/tgc-dk/pysword]["commits ahead" headers]]
 + [[https://github.com/kcarnold/pysword/network/members][Members list]]

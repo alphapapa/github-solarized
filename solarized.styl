@@ -419,6 +419,29 @@ a.label
     &.type-icon-state-open
         color green
 
+// *** pagination
+.pagination
+    .current
+        background-color highlight-extra
+        color emphasized
+    .disabled
+            background-color highlight
+            color comment
+
+            &:hover
+                background-color highlight
+    .gap
+        background-color highlight
+        color comment
+    a
+        background-color highlight
+        border-color color-background
+        color()
+
+        &:hover
+            background-color highlight-extra
+            color color-background
+        
 // *** readmes
 #readme .plain
     background-color()
