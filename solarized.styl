@@ -82,7 +82,6 @@ textarea, .comment-form-textarea *
     background-color highlight-extra
 .file-wrap
     background-color()
-    border-color color-background-highlight-extra
     color()
 
     *
@@ -150,7 +149,6 @@ textarea, .comment-form-textarea *
 
     &.selected
         color()
-
 
 .text-emphasized
     color emphasized
@@ -247,7 +245,11 @@ textarea, .comment-form-textarea *
     background-color highlight
 
 .branch-action-state-clean .branch-action-icon
-    background-color: green i
+    background-color green i
+
+.branch-infobar
+    border-color comment
+    background-color highlight
 
 // *** commit
 .commit
@@ -256,11 +258,19 @@ textarea, .comment-form-textarea *
 .commit-group-title .octicon-git-commit
     background-color()
 
+    *
+        border-color highlight-extra
 
 .commit-author
     color()
 .commit-meta
     color comment
+
+    .sha-block
+        color comment
+
+        .sha
+            color()
 .commit-ref
     background-color highlight
     color emphasized
@@ -268,31 +278,19 @@ textarea, .comment-form-textarea *
     .user
         color cyan
 
-.commit-title
-    text-shadow 0px 1px rgba(color-background, 0.5) i
-
-    a
-        color emphasized
-
 .commit-branches *
 .commit-tease
-.full-commit p.commit-title
-    background-color highlight
+.commit-title
+    // e.g. "This branch is 8 commits ahead of..."
+    background-color transparentify(blue, color-background, 0.2)
     border-color emphasized emphasized color-background-highlight-extra emphasized
-    color emphasized
 
-    *, .sha-block
-        background-color highlight
-        color comment
+    *
+        color emphasized
 
-    .commit-meta, .commit-meta *
-        background-color()
-
-    a
-        color()
-
-    .sha
-        color()
+.commit-meta
+    background-color highlight
+    color()
 
 .commits-listing:before
     background-color highlight
@@ -304,13 +302,7 @@ textarea, .comment-form-textarea *
     *
         text-shadow none i
 
-    .authorship a
-        color()
-
     .commit-desc pre
-        color()
-
-    .sha-block > .sha
         color()
 
 // *** discussions
@@ -358,10 +350,14 @@ textarea, .comment-form-textarea *
 .files
     *
         color comment
+
     tbody
         tr *
-            background-color highlight
-            border-color color-background
+            background-color()
+            border-color color-background-highlight
+
+        tr:hover *
+            background-color color-background-highlight-extra-less
 
 // *** header
 .btn
