@@ -216,13 +216,28 @@
   }
   .branch-action-body {
     background-color: #073642 !important;
+    border-color: #586e75 !important;
+  }
+  .branch-action-body div {
+    border-color: #586e75 !important;
   }
   .branch-action-state-clean .branch-action-icon {
     background-color: #859900 !important;
   }
+  .branch-action-state-unstable .branch-action-icon,
+  .branch-action-state-unknown .branch-action-icon {
+    background-color: #b58900 !important;
+  }
   .branch-infobar {
     border-color: #586e75 !important;
     background-color: #073642 !important;
+  }
+  .build-status-item {
+    background-color: #083c4a !important;
+    color: emphasize !important;
+  }
+  .build-status-item .build-status-details {
+    color: #268bd2 !important;
   }
   .commit,
   .commit-meta,
@@ -283,6 +298,9 @@
   .full-commit .commit-desc pre {
     color: #839496 !important;
   }
+  .completeness-indicator-success {
+    background-color: #859900 !important;
+  }
   .blankslate {
     background-color: #073642 !important;
     color: #93a1a1 !important;
@@ -295,6 +313,10 @@
   }
   .discussion-item-closed .discussion-item-icon {
     background-color: #dc322f !important;
+    color: #93a1a1 !important;
+  }
+  .discussion-item-icon {
+    background-color: #586e75 !important;
     color: #93a1a1 !important;
   }
   .discussion-timeline:before {
@@ -319,6 +341,9 @@
   }
   .timeline-comment-wrapper {
     border-color: #002b36 !important;
+  }
+  .donut-chart > .pending {
+    fill: #b58900 !important;
   }
   .files * {
     color: #586e75 !important;
@@ -392,6 +417,9 @@
   .octicon.octicon-git-compare.type-icon-state-open,
   .octicon-repo-forked.type-icon-state-open {
     color: #859900 !important;
+  }
+  .octicon-check {
+    color: #fff !important;
   }
   .octicon-clippy {
     color: #268bd2 !important;
@@ -535,6 +563,18 @@
   }
   .table-list-header {
     background-color: #073642 !important;
+  }
+  .text-pending {
+    color: #b58900 !important;
+  }
+  .text-pending .octicon-primitive-dot {
+    color: #b58900 !important;
+  }
+  .timeline-commits .commit-meta {
+    background-color: #002b36 !important;
+  }
+  .timeline-commits .commit-meta .commit-id {
+    color: #586e75 !important;
   }
 }
 

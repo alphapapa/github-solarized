@@ -243,13 +243,29 @@ textarea, .comment-form-textarea *
 // *** branch
 .branch-action-body
     background-color highlight
+    border-color comment
+
+    div
+        border-color comment
 
 .branch-action-state-clean .branch-action-icon
     background-color green i
 
+.branch-action-state-unstable .branch-action-icon
+.branch-action-state-unknown .branch-action-icon
+    background-color yellow i
+
 .branch-infobar
     border-color comment
     background-color highlight
+
+// *** build
+.build-status-item
+    background-color color-background-highlight-extra-less
+    color emphasize
+
+    .build-status-details
+        color blue
 
 // *** commit
 .commit
@@ -305,6 +321,11 @@ textarea, .comment-form-textarea *
     .commit-desc pre
         color()
 
+// *** completeness-indicator
+.completeness-indicator-success
+    background-color green i
+
+
 // *** discussions
 .blankslate
     background-color highlight
@@ -320,6 +341,10 @@ textarea, .comment-form-textarea *
     .discussion-item-icon
         background-color red
         color emphasized
+
+.discussion-item-icon
+    background-color highlight-extra
+    color emphasized
 
 .discussion-timeline:before
     background-color color-border
@@ -345,7 +370,10 @@ textarea, .comment-form-textarea *
     // Don't show extra borders around every comment
     border-color color-background
 
-
+// *** donut
+.donut-chart
+    > .pending
+        fill yellow i
 // *** files
 .files
     *
@@ -418,11 +446,16 @@ a.label
     &.type-icon-state-open
         color green
 
+.octicon-check
+    color white
+
 .octicon-clippy
     color blue
 
 .octicon-git-pull-request, .octicon-diff
     color()
+
+
 
 // *** pagination
 .pagination
@@ -579,3 +612,18 @@ a.label
 
 .table-list-header
     background-color highlight
+
+// *** text
+.text-pending
+    color yellow i
+
+    .octicon-primitive-dot
+        color yellow
+
+// *** timeline
+.timeline-commits
+    .commit-meta
+        background-color()
+
+        .commit-id
+            color comment
