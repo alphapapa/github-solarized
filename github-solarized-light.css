@@ -122,14 +122,14 @@
   .table-list-header-toggle .btn-link.selected {
     color: #657b83 !important;
   }
-  .text-emphasized {
-    color: #586e75 !important;
-  }
   .text-diff-added {
     color: #859900 !important;
   }
   .text-diff-deleted {
     color: #dc322f !important;
+  }
+  .text-emphasized {
+    color: #586e75 !important;
   }
   .avatar,
   .timeline-comment-avatar {
@@ -319,6 +319,9 @@
     background-color: #93a1a1 !important;
     color: #586e75 !important;
   }
+  .discussion-item-icon.octicon {
+    color: #586e75 !important;
+  }
   .discussion-timeline:before {
     background-color: #839496 !important;
   }
@@ -421,12 +424,18 @@
   .octicon-check {
     color: #fff !important;
   }
+  .octicon-x {
+    color: #dc322f !important;
+  }
   .octicon-clippy {
     color: #268bd2 !important;
   }
   .octicon-git-pull-request,
   .octicon-diff {
     color: #657b83 !important;
+  }
+  .octicon-markdown {
+    color: #93a1a1 !important;
   }
   .pagination .current {
     background-color: #93a1a1 !important;
@@ -543,6 +552,9 @@
   }
   .subnav-search input {
     border-color: #93a1a1 !important;
+  }
+  .right .tabnav-extra {
+    color: #93a1a1 !important;
   }
   .tabnav-tab {
     border-color: transparent !important;
