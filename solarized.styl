@@ -460,7 +460,8 @@ a.label
 .octicon-git-pull-request, .octicon-diff
     color()
 
-
+.octicon-markdown
+    color comment
 
 // *** pagination
 .pagination
@@ -596,7 +597,14 @@ a.label
 .subnav-search input
     border-color comment
 
+
 // *** tabnav
+.right .tabnav-extra
+    // This affects the "Markdown supported" text above a comment box.
+    // Only .tabnav-extra should be necessary here, but without
+    // .right, it doesn't work.  No idea why.  That's CSS for ya.
+    color comment
+
 .tabnav-tab
     border-color transparent
     color comment
