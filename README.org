@@ -23,5 +23,6 @@ It's a good idea to avoid the use of =*= selectors wherever possible.  They tend
 + [[https://github.com/kcarnold/pysword/graphs/code-frequency][Code frequency]]
 + Reverse gradient on light version
 + Update screenshots (file list slightly improved)
++ [[https://github.com/fish-shell/fish-shell/search?q%3Dright%2Bprompt&type%3DIssues&utf8%3D%25E2%259C%2593][Searches]]
 ** License
 Really?  Come on, it's just some CSS.  Just have fun and share!
