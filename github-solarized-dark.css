@@ -18,6 +18,10 @@
     background-color: #073642 !important;
     color: #839496 !important;
   }
+  .js-url-field {
+    background-color: #002b36 !important;
+    border-color: #073642 !important;
+  }
   .breadcrumb strong.final-path {
     color: #839496 !important;
   }
@@ -122,14 +126,14 @@
   .table-list-header-toggle .btn-link.selected {
     color: #839496 !important;
   }
+  .text-emphasized {
+    color: #93a1a1 !important;
+  }
   .text-diff-added {
     color: #859900 !important;
   }
   .text-diff-deleted {
     color: #dc322f !important;
-  }
-  .text-emphasized {
-    color: #93a1a1 !important;
   }
   .avatar,
   .timeline-comment-avatar {
@@ -301,6 +305,9 @@
   .completeness-indicator-success {
     background-color: #859900 !important;
   }
+  .copyable-terminal {
+    background-color: #073642 !important;
+  }
   .blankslate {
     background-color: #073642 !important;
     color: #93a1a1 !important;
@@ -436,6 +443,10 @@
   }
   .octicon-markdown {
     color: #586e75 !important;
+  }
+  .outline-box-highlighted {
+    background-color: #073642 !important;
+    color: #93a1a1 !important;
   }
   .pagination .current {
     background-color: #586e75 !important;
