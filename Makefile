@@ -1,6 +1,7 @@
-all: dark light
+COLORS := dark light
+COMMON_FILES := colors.styl solarized.styl
 
-dark: solarized.styl dark.styl
-	stylus -p <dark.styl >github-solarized-dark.css
-light: solarized.styl light.styl
-	stylus -p <light.styl >github-solarized-light.css
+all: $(foreach color,$(COLORS), github-solarized-$(color).css)
+
+github-solarized-%.css: %.styl $(COMMON_FILES)
+	stylus -p <$*.styl >$@
