@@ -238,7 +238,7 @@
   }
   .build-status-item {
     background-color: #ebe4cf !important;
-    color: emphasize !important;
+    color: #586e75 !important;
   }
   .build-status-item .build-status-details {
     color: #268bd2 !important;
@@ -253,7 +253,7 @@
   .commit-meta *,
   .commit-icon .octicon *,
   .commit-group-title .octicon-git-commit * {
-    border-color: highlight-extra !important;
+    border-color: #93a1a1 !important;
   }
   .commit-author {
     color: #657b83 !important;
@@ -493,7 +493,7 @@
   }
   .markdown-body hr,
   .markdown-body table * hr {
-    background-color: #586e75 !important;
+    background-color: #93a1a1 !important;
   }
   .repository-description {
     color: #657b83 !important;
