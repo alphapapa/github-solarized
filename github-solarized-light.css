@@ -366,7 +366,7 @@
     background-color: #ebe4cf !important;
   }
   .btn {
-    background-image: linear-gradient(#93a1a1, #eee8d5) !important;
+    background-image: linear-gradient(to bottom, #eee8d5, #93a1a1) !important;
     border-color: #93a1a1 !important;
     color: #586e75 !important;
   }
