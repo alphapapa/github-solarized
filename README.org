@@ -1,28 +1,2 @@
 * github-solarized
-This is a set of user-stylesheets based upon the [[http://ethanschoonover.com/solarized][Solarized]] theme ([[https://github.com/altercation/solarized][repo]]).  It uses [[http://learnboost.github.com/stylus/][Stylus]] to generate the CSS.  The home of this stylesheet is at [[https://github.com/alphapapa/github-solarized]].
-** Screenshots
-*** Dark
-[[dark.png]]
-*** Light
-[[light.png]]
-** Installation
-Install the =github-solarized-dark.css= file (or you can use the light one, if you want...) according to your browser's method (e.g. using the Stylish extension in Firefox).
-** Development
-To make changes, just edit the =.styl= files and run =make=.  (You need to have Stylus installed, of course.)
-
-Basically, nearly the only things that should be in =dark.styl= or =light.styl= should be changes to the =color-= variables that adjust it for light or dark.  Everything else should go in =solarized.styl=.  Colors are defined as =color-= variables, and mixins are used to insert common CSS properties (like =color=, =background=, etc) with =!important=.  Most changes can be made without inserting CSS properties directly into the selectors.
-
-I highly recommend using Emacs with =stylus-mode= and =outshine-mode=, but, of course, you can use whatever you like.  :)
-
-It's a good idea to avoid the use of =*= selectors wherever possible.  They tend to have unanticipated side-effects which can take time to track down.
-
-*** To-Do
-+ [[https://github.com/openbible/sword/network][Network graphs]]
-+ [[https://github.com/kcarnold/pysword/network/members][Members list]]
-+ [[https://github.com/kcarnold/pysword/graphs/punch-card][Punch card]]
-+ [[https://github.com/kcarnold/pysword/graphs/code-frequency][Code frequency]]
-+ Reverse gradient on light version
-+ Update screenshots (file list slightly improved)
-+ [[https://github.com/fish-shell/fish-shell/search?q%3Dright%2Bprompt&type%3DIssues&utf8%3D%25E2%259C%2593][Searches]]
-** License
-Really?  Come on, it's just some CSS.  Just have fun and share!
+*This stylesheet has been rolled into the [[https://github.com/alphapapa/solarized-everything-css][solarized-everything-css]] project, which also covers several other web sites.  Please check out its new home.  :)*
